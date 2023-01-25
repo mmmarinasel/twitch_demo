@@ -8,24 +8,48 @@
 
 /* Begin PBXBuildFile section */
 		41AEA57629817CBF003934F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AEA57529817CBF003934F1 /* AppDelegate.swift */; };
-		41AEA57829817CBF003934F1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AEA57729817CBF003934F1 /* SceneDelegate.swift */; };
-		41AEA57A29817CBF003934F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AEA57929817CBF003934F1 /* ViewController.swift */; };
-		41AEA57D29817CBF003934F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41AEA57B29817CBF003934F1 /* Main.storyboard */; };
-		41AEA58029817CBF003934F1 /* mmmarinasel_twitch_demo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 41AEA57E29817CBF003934F1 /* mmmarinasel_twitch_demo.xcdatamodeld */; };
+		41AEA57A29817CBF003934F1 /* GamesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AEA57929817CBF003934F1 /* GamesViewController.swift */; };
 		41AEA58229817CC5003934F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41AEA58129817CC5003934F1 /* Assets.xcassets */; };
 		41AEA58529817CC5003934F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41AEA58329817CC5003934F1 /* LaunchScreen.storyboard */; };
+		41AEA59829817F6A003934F1 /* StreamsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AEA59729817F6A003934F1 /* StreamsViewController.swift */; };
+		41AEA59A298180C8003934F1 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AEA599298180C8003934F1 /* NetworkManager.swift */; };
+		41AEA59C2981813C003934F1 /* ViewLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AEA59B2981813C003934F1 /* ViewLoadable.swift */; };
+		41AEA59E2981815B003934F1 /* StreamsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AEA59D2981815B003934F1 /* StreamsView.swift */; };
+		41AEA5A02981816C003934F1 /* GamesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AEA59F2981816C003934F1 /* GamesView.swift */; };
+		41AEA5A32981818F003934F1 /* GameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AEA5A22981818F003934F1 /* GameTableViewCell.swift */; };
+		41AEA5A6298181A2003934F1 /* StreamTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AEA5A5298181A2003934F1 /* StreamTableViewCell.swift */; };
+		41AEA5A8298183C8003934F1 /* GamesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AEA5A7298183C8003934F1 /* GamesModel.swift */; };
+		41AEA5AA2981840E003934F1 /* Responses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AEA5A92981840E003934F1 /* Responses.swift */; };
+		41AEA5AC29818458003934F1 /* StreamsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AEA5AB29818458003934F1 /* StreamsModel.swift */; };
+		41AEA5AE29818656003934F1 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AEA5AD29818656003934F1 /* Observable.swift */; };
+		41AEA5B0298186BB003934F1 /* GamesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AEA5AF298186BB003934F1 /* GamesViewModel.swift */; };
+		41AEA5B2298186DC003934F1 /* StreamsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AEA5B1298186DC003934F1 /* StreamsViewModel.swift */; };
+		41AEA5B4298190D9003934F1 /* GameCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AEA5B3298190D9003934F1 /* GameCellViewModel.swift */; };
+		41AEA5B629819858003934F1 /* StreamCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AEA5B529819858003934F1 /* StreamCellViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		41AEA57229817CBF003934F1 /* mmmarinasel_twitch_demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mmmarinasel_twitch_demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41AEA57529817CBF003934F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		41AEA57729817CBF003934F1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		41AEA57929817CBF003934F1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		41AEA57C29817CBF003934F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		41AEA57F29817CBF003934F1 /* mmmarinasel_twitch_demo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = mmmarinasel_twitch_demo.xcdatamodel; sourceTree = "<group>"; };
+		41AEA57929817CBF003934F1 /* GamesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesViewController.swift; sourceTree = "<group>"; };
 		41AEA58129817CC5003934F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		41AEA58429817CC5003934F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		41AEA58629817CC5003934F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41AEA59729817F6A003934F1 /* StreamsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamsViewController.swift; sourceTree = "<group>"; };
+		41AEA599298180C8003934F1 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		41AEA59B2981813C003934F1 /* ViewLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewLoadable.swift; sourceTree = "<group>"; };
+		41AEA59D2981815B003934F1 /* StreamsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamsView.swift; sourceTree = "<group>"; };
+		41AEA59F2981816C003934F1 /* GamesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesView.swift; sourceTree = "<group>"; };
+		41AEA5A22981818F003934F1 /* GameTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTableViewCell.swift; sourceTree = "<group>"; };
+		41AEA5A5298181A2003934F1 /* StreamTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamTableViewCell.swift; sourceTree = "<group>"; };
+		41AEA5A7298183C8003934F1 /* GamesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesModel.swift; sourceTree = "<group>"; };
+		41AEA5A92981840E003934F1 /* Responses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Responses.swift; sourceTree = "<group>"; };
+		41AEA5AB29818458003934F1 /* StreamsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamsModel.swift; sourceTree = "<group>"; };
+		41AEA5AD29818656003934F1 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		41AEA5AF298186BB003934F1 /* GamesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesViewModel.swift; sourceTree = "<group>"; };
+		41AEA5B1298186DC003934F1 /* StreamsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamsViewModel.swift; sourceTree = "<group>"; };
+		41AEA5B3298190D9003934F1 /* GameCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCellViewModel.swift; sourceTree = "<group>"; };
+		41AEA5B529819858003934F1 /* StreamCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamCellViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +82,132 @@
 		41AEA57429817CBF003934F1 /* mmmarinasel_twitch_demo */ = {
 			isa = PBXGroup;
 			children = (
+				41AEA58E29817F04003934F1 /* Service */,
+				41AEA58D29817EFC003934F1 /* Helper */,
+				41AEA58C29817EF7003934F1 /* Screens */,
 				41AEA57529817CBF003934F1 /* AppDelegate.swift */,
-				41AEA57729817CBF003934F1 /* SceneDelegate.swift */,
-				41AEA57929817CBF003934F1 /* ViewController.swift */,
-				41AEA57B29817CBF003934F1 /* Main.storyboard */,
 				41AEA58129817CC5003934F1 /* Assets.xcassets */,
 				41AEA58329817CC5003934F1 /* LaunchScreen.storyboard */,
 				41AEA58629817CC5003934F1 /* Info.plist */,
-				41AEA57E29817CBF003934F1 /* mmmarinasel_twitch_demo.xcdatamodeld */,
 			);
 			path = mmmarinasel_twitch_demo;
+			sourceTree = "<group>";
+		};
+		41AEA58C29817EF7003934F1 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				41AEA59029817F17003934F1 /* Streams */,
+				41AEA58F29817F11003934F1 /* Games */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		41AEA58D29817EFC003934F1 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				41AEA59B2981813C003934F1 /* ViewLoadable.swift */,
+				41AEA5AD29818656003934F1 /* Observable.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		41AEA58E29817F04003934F1 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				41AEA599298180C8003934F1 /* NetworkManager.swift */,
+				41AEA5A92981840E003934F1 /* Responses.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		41AEA58F29817F11003934F1 /* Games */ = {
+			isa = PBXGroup;
+			children = (
+				41AEA59329817F2C003934F1 /* Model */,
+				41AEA59229817F27003934F1 /* View */,
+				41AEA59129817F1E003934F1 /* ViewModel */,
+			);
+			path = Games;
+			sourceTree = "<group>";
+		};
+		41AEA59029817F17003934F1 /* Streams */ = {
+			isa = PBXGroup;
+			children = (
+				41AEA59629817F3E003934F1 /* Model */,
+				41AEA59529817F38003934F1 /* View */,
+				41AEA59429817F32003934F1 /* ViewModel */,
+			);
+			path = Streams;
+			sourceTree = "<group>";
+		};
+		41AEA59129817F1E003934F1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				41AEA5AF298186BB003934F1 /* GamesViewModel.swift */,
+				41AEA5B3298190D9003934F1 /* GameCellViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		41AEA59229817F27003934F1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				41AEA5A12981817B003934F1 /* Cell */,
+				41AEA57929817CBF003934F1 /* GamesViewController.swift */,
+				41AEA59F2981816C003934F1 /* GamesView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		41AEA59329817F2C003934F1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				41AEA5A7298183C8003934F1 /* GamesModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		41AEA59429817F32003934F1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				41AEA5B1298186DC003934F1 /* StreamsViewModel.swift */,
+				41AEA5B529819858003934F1 /* StreamCellViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		41AEA59529817F38003934F1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				41AEA5A429818196003934F1 /* Cell */,
+				41AEA59729817F6A003934F1 /* StreamsViewController.swift */,
+				41AEA59D2981815B003934F1 /* StreamsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		41AEA59629817F3E003934F1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				41AEA5AB29818458003934F1 /* StreamsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		41AEA5A12981817B003934F1 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				41AEA5A22981818F003934F1 /* GameTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		41AEA5A429818196003934F1 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				41AEA5A5298181A2003934F1 /* StreamTableViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,7 +270,6 @@
 			files = (
 				41AEA58529817CC5003934F1 /* LaunchScreen.storyboard in Resources */,
 				41AEA58229817CC5003934F1 /* Assets.xcassets in Resources */,
-				41AEA57D29817CBF003934F1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,24 +280,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41AEA58029817CBF003934F1 /* mmmarinasel_twitch_demo.xcdatamodeld in Sources */,
-				41AEA57A29817CBF003934F1 /* ViewController.swift in Sources */,
+				41AEA5B629819858003934F1 /* StreamCellViewModel.swift in Sources */,
+				41AEA5AE29818656003934F1 /* Observable.swift in Sources */,
+				41AEA59829817F6A003934F1 /* StreamsViewController.swift in Sources */,
+				41AEA59A298180C8003934F1 /* NetworkManager.swift in Sources */,
+				41AEA5A02981816C003934F1 /* GamesView.swift in Sources */,
+				41AEA5B2298186DC003934F1 /* StreamsViewModel.swift in Sources */,
+				41AEA57A29817CBF003934F1 /* GamesViewController.swift in Sources */,
+				41AEA59C2981813C003934F1 /* ViewLoadable.swift in Sources */,
+				41AEA59E2981815B003934F1 /* StreamsView.swift in Sources */,
+				41AEA5A6298181A2003934F1 /* StreamTableViewCell.swift in Sources */,
+				41AEA5B4298190D9003934F1 /* GameCellViewModel.swift in Sources */,
 				41AEA57629817CBF003934F1 /* AppDelegate.swift in Sources */,
-				41AEA57829817CBF003934F1 /* SceneDelegate.swift in Sources */,
+				41AEA5A32981818F003934F1 /* GameTableViewCell.swift in Sources */,
+				41AEA5B0298186BB003934F1 /* GamesViewModel.swift in Sources */,
+				41AEA5AC29818458003934F1 /* StreamsModel.swift in Sources */,
+				41AEA5A8298183C8003934F1 /* GamesModel.swift in Sources */,
+				41AEA5AA2981840E003934F1 /* Responses.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		41AEA57B29817CBF003934F1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				41AEA57C29817CBF003934F1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		41AEA58329817CC5003934F1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -296,7 +440,6 @@
 				INFOPLIST_FILE = mmmarinasel_twitch_demo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -324,7 +467,6 @@
 				INFOPLIST_FILE = mmmarinasel_twitch_demo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -362,19 +504,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		41AEA57E29817CBF003934F1 /* mmmarinasel_twitch_demo.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				41AEA57F29817CBF003934F1 /* mmmarinasel_twitch_demo.xcdatamodel */,
-			);
-			currentVersion = 41AEA57F29817CBF003934F1 /* mmmarinasel_twitch_demo.xcdatamodel */;
-			path = mmmarinasel_twitch_demo.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 41AEA56A29817CBE003934F1 /* Project object */;
 }
