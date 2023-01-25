@@ -5,7 +5,7 @@ class StreamsViewModel {
     var streamCellViewModels: Observable<[StreamCellViewModel]> = Observable([])
     public var streams: Observable<StreamsResponse?> = Observable(nil)
     
-    public init(_ game: GameDetails) {
+    public init(_ game: GameDetails?) {
         self.streamsModel = StreamsModel(game)
         self.streamsModel.fetchData { [weak self] data in
             self?.streams.value = data

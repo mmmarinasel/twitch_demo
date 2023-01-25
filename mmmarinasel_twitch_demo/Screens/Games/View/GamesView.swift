@@ -7,23 +7,17 @@ final class GamesView: UIView {
     
     private var gamesViewModel: GamesViewModel?
     
-    init() {
+    init(vm: GamesViewModel) {
         super.init(frame: .zero)
         self.backgroundColor = .systemBackground
         
-        self.gamesViewModel = GamesViewModel()
+        self.gamesViewModel = vm
         self.setup()
         self.gamesViewModel?.games.bind { [weak self] _ in
             self?.gamesTableView.reloadData()
         }
         
-        self.gamesViewModel?.presentedItem.bind { [weak self] data in
-            let vc = StreamsViewController()
-            vc.modalPresentationStyle = .fullScreen
-            guard let data = data else { return }
-            vc.view. = StreamsViewModel(data ?? <#default value#>)
-            self?.present(vc, animated: true)
-        }
+        
     }
 
     required init?(coder: NSCoder) {
@@ -72,10 +66,14 @@ extension GamesView: UITableViewDataSource {
         else { return UITableViewCell() }
         let cellVM = self.gamesViewModel?.getGameCellViewModel(indexPath)
         cell.cellViewModel = cellVM
+        
+//        self.gamesViewModel?.processPagination(indexPath)
+        
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        self.gamesViewModel?.handleTap(indexPath)
     }
 }

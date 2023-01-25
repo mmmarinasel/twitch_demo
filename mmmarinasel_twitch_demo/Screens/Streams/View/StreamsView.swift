@@ -5,11 +5,12 @@ class StreamsView: UIView {
     public var streamsTableView: UITableView = UITableView()
     private let rowHeight: CGFloat = 140
     private var streamsViewModel: StreamsViewModel?
+    public var game: GameDetails?
     
-    init() {
+    init(_ game: GameDetails?) {
         super.init(frame: .zero)
         self.backgroundColor = .systemBackground
-        self.streamsViewModel = StreamsViewModel()
+        self.streamsViewModel = StreamsViewModel(game)
         self.setup()
         self.streamsViewModel?.streams.bind { [weak self] _ in
             self?.streamsTableView.reloadData()

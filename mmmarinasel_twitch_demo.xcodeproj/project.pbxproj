@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -26,9 +26,15 @@
 		41AEA5B2298186DC003934F1 /* StreamsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AEA5B1298186DC003934F1 /* StreamsViewModel.swift */; };
 		41AEA5B4298190D9003934F1 /* GameCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AEA5B3298190D9003934F1 /* GameCellViewModel.swift */; };
 		41AEA5B629819858003934F1 /* StreamCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AEA5B529819858003934F1 /* StreamCellViewModel.swift */; };
+		41AEA5B82981A6BB003934F1 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AEA5B72981A6BB003934F1 /* DatabaseManager.swift */; };
+		41AEA5BA2981A6E2003934F1 /* RealmObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AEA5B92981A6E2003934F1 /* RealmObjects.swift */; };
+		76869BB374168099A4660C8F /* Pods_mmmarinasel_twitch_demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D7BDDA5FE7939A151C9F233 /* Pods_mmmarinasel_twitch_demo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2D4A6CFA9CD318CFB7BC6CC9 /* Pods-mmmarinasel_twitch_demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mmmarinasel_twitch_demo.release.xcconfig"; path = "Target Support Files/Pods-mmmarinasel_twitch_demo/Pods-mmmarinasel_twitch_demo.release.xcconfig"; sourceTree = "<group>"; };
+		2D7BDDA5FE7939A151C9F233 /* Pods_mmmarinasel_twitch_demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mmmarinasel_twitch_demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		33F25607F94BB08EF8C242D0 /* Pods-mmmarinasel_twitch_demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mmmarinasel_twitch_demo.debug.xcconfig"; path = "Target Support Files/Pods-mmmarinasel_twitch_demo/Pods-mmmarinasel_twitch_demo.debug.xcconfig"; sourceTree = "<group>"; };
 		41AEA57229817CBF003934F1 /* mmmarinasel_twitch_demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mmmarinasel_twitch_demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41AEA57529817CBF003934F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41AEA57929817CBF003934F1 /* GamesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesViewController.swift; sourceTree = "<group>"; };
@@ -50,6 +56,8 @@
 		41AEA5B1298186DC003934F1 /* StreamsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamsViewModel.swift; sourceTree = "<group>"; };
 		41AEA5B3298190D9003934F1 /* GameCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCellViewModel.swift; sourceTree = "<group>"; };
 		41AEA5B529819858003934F1 /* StreamCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamCellViewModel.swift; sourceTree = "<group>"; };
+		41AEA5B72981A6BB003934F1 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		41AEA5B92981A6E2003934F1 /* RealmObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmObjects.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,17 +65,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76869BB374168099A4660C8F /* Pods_mmmarinasel_twitch_demo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0DED0B1D7F27FB98AF9357AA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2D7BDDA5FE7939A151C9F233 /* Pods_mmmarinasel_twitch_demo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		41AEA56929817CBE003934F1 = {
 			isa = PBXGroup;
 			children = (
 				41AEA57429817CBF003934F1 /* mmmarinasel_twitch_demo */,
 				41AEA57329817CBF003934F1 /* Products */,
+				6B1131FE203687240B7375C2 /* Pods */,
+				0DED0B1D7F27FB98AF9357AA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -116,6 +135,8 @@
 			children = (
 				41AEA599298180C8003934F1 /* NetworkManager.swift */,
 				41AEA5A92981840E003934F1 /* Responses.swift */,
+				41AEA5B72981A6BB003934F1 /* DatabaseManager.swift */,
+				41AEA5B92981A6E2003934F1 /* RealmObjects.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -210,6 +231,15 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		6B1131FE203687240B7375C2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				33F25607F94BB08EF8C242D0 /* Pods-mmmarinasel_twitch_demo.debug.xcconfig */,
+				2D4A6CFA9CD318CFB7BC6CC9 /* Pods-mmmarinasel_twitch_demo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -217,9 +247,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 41AEA58929817CC5003934F1 /* Build configuration list for PBXNativeTarget "mmmarinasel_twitch_demo" */;
 			buildPhases = (
+				4CC7F5D465A0397DB5B2D7EF /* [CP] Check Pods Manifest.lock */,
 				41AEA56E29817CBF003934F1 /* Sources */,
 				41AEA56F29817CBF003934F1 /* Frameworks */,
 				41AEA57029817CBF003934F1 /* Resources */,
+				2D3D66FF1F244ECC0338884F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -246,7 +278,7 @@
 				};
 			};
 			buildConfigurationList = 41AEA56D29817CBE003934F1 /* Build configuration list for PBXProject "mmmarinasel_twitch_demo" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -275,6 +307,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2D3D66FF1F244ECC0338884F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-mmmarinasel_twitch_demo/Pods-mmmarinasel_twitch_demo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-mmmarinasel_twitch_demo/Pods-mmmarinasel_twitch_demo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-mmmarinasel_twitch_demo/Pods-mmmarinasel_twitch_demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4CC7F5D465A0397DB5B2D7EF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mmmarinasel_twitch_demo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		41AEA56E29817CBF003934F1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -288,6 +362,8 @@
 				41AEA5B2298186DC003934F1 /* StreamsViewModel.swift in Sources */,
 				41AEA57A29817CBF003934F1 /* GamesViewController.swift in Sources */,
 				41AEA59C2981813C003934F1 /* ViewLoadable.swift in Sources */,
+				41AEA5BA2981A6E2003934F1 /* RealmObjects.swift in Sources */,
+				41AEA5B82981A6BB003934F1 /* DatabaseManager.swift in Sources */,
 				41AEA59E2981815B003934F1 /* StreamsView.swift in Sources */,
 				41AEA5A6298181A2003934F1 /* StreamTableViewCell.swift in Sources */,
 				41AEA5B4298190D9003934F1 /* GameCellViewModel.swift in Sources */,
@@ -430,6 +506,7 @@
 		};
 		41AEA58A29817CC5003934F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33F25607F94BB08EF8C242D0 /* Pods-mmmarinasel_twitch_demo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -457,6 +534,7 @@
 		};
 		41AEA58B29817CC5003934F1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D4A6CFA9CD318CFB7BC6CC9 /* Pods-mmmarinasel_twitch_demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

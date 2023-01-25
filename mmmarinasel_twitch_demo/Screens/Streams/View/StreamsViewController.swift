@@ -2,6 +2,8 @@ import UIKit
 
 class StreamsViewController: UIViewController, ViewLoadable {
 
+    public var game: GameDetails?
+    
     typealias MainView = StreamsView
     
     override func viewDidLoad() {
@@ -10,6 +12,6 @@ class StreamsViewController: UIViewController, ViewLoadable {
     }
     
     override func loadView() {
-        self.view = StreamsView()
+        self.view = StreamsView(game)
     }
 }

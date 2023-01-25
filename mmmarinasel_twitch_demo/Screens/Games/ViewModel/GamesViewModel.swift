@@ -5,6 +5,8 @@ class GamesViewModel {
     public var gameCellViewModels: Observable<[GameCellViewModel]> = Observable([])
     public var games: Observable<GamesResponse?> = Observable(nil)
     public var presentedItem: Observable<GameDetails?> = Observable(nil)
+    private let pagination: Int = 20
+    private var paginationOffset: Int = 0
     
     public init() {
         self.gamesModel = GamesModel()
@@ -36,7 +38,21 @@ class GamesViewModel {
         return GameCellViewModel(title: title, imageUrl: imageUrl, id: id)
     }
     
+    public func processPagination(_ indexPath: IndexPath) {
+        guard indexPath.row % self.pagination == 18 else { return }
+        self.paginationOffset += self.pagination
+        
+        self.gamesModel.paginationFetch(self.paginationOffset) { [weak self] addItems in
+            var gamesNew = self?.games.value
+            gamesNew??.data.append(contentsOf: addItems?.data ?? [])
+            self?.games.value = gamesNew
+            self?.setVMs()
+        }
+    }
+    
     func handleTap(_ indexPath: IndexPath) {
-        self.presentedItem.value = self.games.value??.data[indexPath.row]
+        let item = self.games.value??.data[indexPath.row]
+        
+        self.presentedItem.value = item
     }
 }
